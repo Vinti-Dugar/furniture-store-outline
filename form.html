@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form action="tabel2.html" method="get" enctype="multipart/form-data"> 
+		<div>
+			<label for="fname">FNAME:</label>
+			<input type="text" name="FNAME" id="FNAME" placeholder="Enter Name" required="">
+		</div>
+		<div>
+			<label for="LNAME">LNAME</label>
+			<input type="text" name="LNAME" placeholder="last name" required="">
+		</div>
+		<div>
+			<label for="age">AGE</label>
+			<input type="number" name="age" id="age" max="200" min="1" placeholder="age" required="">
+		</div>
+		<div>
+			<label for="dob">DOB</label>
+			<input type="date" name="dob" id="dob" required="">
+		</div>
+		<div>
+			<label for="email">E-mail</label>
+			<input type="email" name="E-mail" id="E-mail">
+		</div>
+		<div>
+			<label for="password">PASSWORD</label>
+			<input type="password" name="password" id="password" required="">
+		</div>
+		<div>
+			<label for="color">COLOR</label>
+			<input type="color" name="color" id="color">
+		</div>
+		<div>
+			<button type="submit">submit</button>
+			<button type="reset">reset</button>
+		</div>
+		<h3>Radio Button</h3>
+		<div>
+			<label for="pani-puri">pani-puri</label>
+			<input type="checkbox" name="pani-puri" id="pani-puri">
+			<label for="dhai">dhai</label>
+			<input type="checkbox" name="dhai" id="dhai">
+		</div>
+		<h3>Gender</h3>
+		<div>
+			<label for="male">Male</label>
+			<input type="Radio" name="gender" id="male" value="male">
+			<label for="female">feMale</label>
+			<input type="Radio" name="gender" id="female" value="female">
+			<label for="other">other</label>
+			<input type="Radio" name="gender" id="other" value="other">
+		</div>
+		<div>
+			<label for="eyecolor">eyecolor</label>
+			<select name="eyecolor" id="eyecolor" required="" multiple="">//select multiple value
+				<option value="green" label="green">green</option>
+				<option value="blue" label="blue">green</option>
+				<option value="red" label="red">green</option>
+			</select>
+		</div>
+		<input type="hidden" name="hidden" value="hii">
+		<div>
+			<label for="bio">BIO</label>
+			<textarea id="bio" name="bio" placeholder="PI"></textarea>
+		</div>
+		<div>
+			<label for="file">choose file</label>
+			<input type="file" name="file" id="file">
+		</div>
+		<div>
+			<label for="phone">phone</label>
+			<input type="tel" name="phone" id="phone">
+		</div>
+		<div>
+			<label for="url">URL</label>
+			<input type="url" name="url" id="url">
+		</div>
+	</form>
+
+</body>
+</html>

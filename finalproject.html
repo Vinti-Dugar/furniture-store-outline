@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GOOD-HOMES</title>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		html
+		{
+			scroll-behavior: smooth;
+		}
+		
+		.top
+		{
+			position: fixed;
+			width: 50px;
+			height: 50px;
+			background: #27ae60;
+			bottom: 40px;
+			right: 50px;
+			text-decoration: none;
+			text-align: center;
+			line-height: 50px;
+			color: white;
+			font-size: 20px;
+			font-family: wingdings;
+		}
+		body
+		{
+			margin:0;
+			padding: 0;
+			background-color: rgb(225,233,238);
+		}
+		div.container
+		{
+			margin-top: 0px;
+			background-color: rgba(51,51,51,0.5);
+			height: 100px;
+			
+		}
+		div.logo
+		{
+			position: absolute;
+			height: 50px;
+			width: 540px;
+			margin-top: 27px;
+
+		}
+		div.logo a
+		{
+			display: block;
+			text-decoration: none;
+			line-height: 50px;
+			font-size: 70px;
+			font-family: Algerian;
+			text-align: center;
+			letter-spacing: 4px;
+			position: relative;
+			color: #000;
+			display: block;
+			text-decoration: none;
+
+			
+		}
+		div.menu
+		{
+			position: relative;
+			margin-left: 700px;
+			margin-top: 0;
+		}
+		div.menu ul
+		{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		div.menu ul li
+		{
+			float: left;
+			width: 100px;
+			height: 40px;
+			opacity: 8;
+			line-height: 40px;
+			text-align: center;
+			font-size: 11px;
+			letter-spacing: 2px;
+			color: #000;
+			margin-right: 0px;
+			position: relative;
+			margin-top: 30px;
+			overflow: hidden;
+			transition: 0.7s all;
+			padding:5px 3px;
+		}
+		div.menu ul li a
+		{
+			text-decoration: none;
+			display: block;
+			color: white;
+		}
+		div.menu li a::before
+		{
+			content: "";
+		    width: 60px;
+			position: absolute;
+			border-bottom: 4px solid #313131;
+			bottom: 0;
+			right: 350px;
+			transition: 0.7s all;
+
+		}
+		div.menu li a:hover:before
+		{
+			right: 0;
+		}
+
+
+/*bar ko adjust kro*/
+
+		div.bar
+		{
+			top: 15%;
+			left: 50%;
+			margin-top: 50px;
+			transform: translate(-50%,-50%);
+			position: absolute;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+
+
+form
+	{
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		left: 50%;
+		top: 50%;
+		padding: 5px;
+		transform: translate(-50%,-50%);
+		border-radius: 50px;
+		border: 4px solid #fff;
+		box-sizing: border-box;
+		background: #fff;
+		transition: 1.5s;
+		color: #000;
+	}
+	input
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: 0;
+		width: 100%;
+		height: 52px;
+		line-height: 75px;
+		outline: 0;
+		display: none;
+		color: #000;
+		font-size: 16px;
+		border-radius: 25px;
+		padding: 0 20px;
+		font-family: sans-serif;
+	}
+	p i.fa
+	{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 52px;
+		height: 52px;
+		box-sizing: border-box;
+		border-radius: 50%;
+		text-align: center;
+		font-size: 25px;
+		transition: 1.5s;
+		color: tomato;
+		background: #262626;
+		padding: 15px;
+	}
+	form:hover
+	{
+		width: 400px;
+		position: absolute;
+	}
+	form:hover input
+	{
+		display: block;
+	}
+/*start*/
+
+		
+/*stop*/
+
+
+
+
+
+
+
+		div.category
+		{
+			left: 2%;
+			margin-top: 110px;
+			padding: 10px;
+			position: absolute;
+			
+		}
+		div.category ul
+		{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		div.category ul li
+		{
+			float: left;
+			width: 200px;
+			height: 40px;
+			opacity: 4;
+			line-height: 40px;
+			text-align: center;
+			font-size: 13px;
+			letter-spacing: 2px;
+			color: #fff;
+			margin-right: 2px;
+			position: relative;
+			font-weight: 40px;
+			background: #ddd;
+			border: 2px solid #000;
+		}
+		div.category ul li a
+		{
+			text-decoration: none;
+			display: block;
+			color: #000;
+			font-weight: 40px;
+
+		}
+		div.category ul li a:hover
+		{
+			background-color: tomato;
+		}
+		div.imgblur
+		{
+			background: url(f12.jpg);
+			position: absolute;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100%;
+			height: 600px;
+			top: 40%;
+		}
+		.imgtitle
+		{
+			position: absolute;
+			top: 40%;
+			left: 18%;
+			z-index: 2;
+			font-family: sans-serif;
+		}
+		.imgtitle h1
+		{
+			position: relative;
+			top: 50%;
+			left: 55%;
+			transform: translate(-50%,-50%);
+			font-family: Comic Sans MS;
+			letter-spacing: 2px;
+			margin: 0;
+			padding: 0;
+			width:895px;
+			height: 100px;
+			color: transparent;
+
+		}
+		.imgtitle h1:before
+		{
+			content: attr(data-text);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			color: midnightblue;
+			overflow: hidden;
+			border-right: 1px solid #000;
+			animation:type 10s steps(30) infinite;
+			white-space: nowrap;
+			font-size: 60px;
+			letter-spacing: 3px;
+		}
+		@keyframes type
+		{
+			0%
+			{
+				width: 0;
+			}
+			50%
+			{
+				width: 100%;
+			}
+			100%
+			{
+				width: 0;
+			}
+		}
+	
+		.imghover
+		{
+			width: 1200px;
+			top: 130%;
+			left: 10%;
+			position: absolute;
+			background: ;
+			display: flex;
+			justify-content: space-between;
+		}
+		.imghover .why
+		{
+			background: #000;
+			position: absolute;
+			width: 1000px;
+			left: 24%;
+			top: -25%;
+			z-index: 2;
+		}
+		.imghover .why h1
+		{
+			font-family: Gabriola;
+			font-size: 100px;
+			letter-spacing: 2px;
+			font-weight: 20;
+			position: absolute;
+			text-align: center;
+			color: #000;
+		}
+		.imghover .card .face
+		{
+			width: 200px;
+			height: 200px;
+			transition: 0.5s;	
+		}
+		.imghover .card .face.face1
+		{
+			position: relative;
+			background: #ddd;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1;
+			transform: translateY(100px);
+		}
+		.imghover .card:hover .face.face1
+		{
+			background: #266262;
+			transform: translateY(0) ;
+		}
+		.imghover .card .face.face1 .content
+		{
+			opacity: 2;
+			transition: .5s;
+		}
+		.imghover .card:hover .face.face1 .content
+		{
+			opacity: .6;
+
+		}
+		.imghover .card.face.face1 .content img
+		{
+			max-width: 100px;
+		}
+		.imghover .card .face.face2
+		{
+			position: relative;
+			background: #fff;
+			transform:; 
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			padding: 20px;
+			box-sizing: border-box;
+			box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+			transform: translateY(-100px);
+		}
+		.imghover .card:hover .face.face2
+		{
+			transform: translate(0);
+		}
+		.imghover .card .face.face2 p
+		{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+
+		.my
+		{
+			position: absolute;
+			top: 120%;
+			left: 0;
+		}
+		.recom
+		{
+			width: 100%;
+			height: 500px;
+			position: relative;
+		}
+		.recom .box1
+		{
+			border: 2px solid #fff;
+			width: 800px;
+			height: 400px;
+		}
+		.recom .box1 .info
+		{
+			font-family: serif;
+			background: tomato;
+			color: #ddd;
+			width: 250px;
+			height: 250px;
+			padding: 10px;
+			position: absolute;
+			top: 15%;
+			left: 84%;
+		}
+		.recom1
+		{
+			width: 100%;
+			height: 500px;
+			position: relative;
+			left: 45%;
+		}
+		.recom1 .box1
+		{
+	
+			border: 2px solid #fff;
+			width: 800px;
+			height: 400px;
+			position: absolute;
+		}
+		.recom1 .box1 .img1 
+		{
+			left: 0;
+			position: relative;
+		}
+		.recom1 .box1 .info
+		{
+			font-family: serif;
+			background: tomato;
+			color: #ddd;
+			width: 250px;
+			height: 250px;
+			padding: 10px;
+			position: absolute;
+			top: 23%;
+			left: -20%;
+		}
+		.recom2
+		{
+			width: 100%;
+			height: 500px;
+			position: relative;
+		}
+		.recom2 .box1
+		{
+			border: 2px solid #fff;
+			width: 800px;
+			height: 400px;
+			position: absolute;
+		}
+		.recom2 .box1 .img1 
+		{
+			position: relative;
+		}
+		.recom2 .box1 .info
+		{
+			font-family: serif;
+			background: tomato;
+			color: #ddd;
+			width: 250px;
+			height: 250px;
+			padding: 10px;
+			position: absolute;
+			top: 23%;
+			left: 90%;
+		}
+		.recom3
+		{
+			width: 100%;
+			height: 500px;
+			position: relative;
+			left: 60%;
+		}
+		.recom3 .box1
+		{
+			border: 2px solid #fff;
+			width: 800px;
+			height: 400px;
+			position: absolute;
+		}
+		.recom3 .box1 .img1 
+		{
+			left: 0%;
+			position: relative;
+		}
+		.recom3 .box1 .info
+		{
+			font-family: serif;
+			background: tomato;
+			color: #ddd;
+			width: 250px;
+			height: 250px;
+			padding: 10px;
+			position: absolute;
+			top: 23%;
+			left: -15%;
+		}
+
+			div.lastbox
+			{
+				top: 650%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				background: lightsteelblue;
+				position: absolute;
+				width: 100%;
+				height: 300px;
+			}
+			div.lastbox div.cc
+			{
+				color: blue;
+				width: 200px;
+				height: 200px;
+				top: 10%;
+				left: 1%;
+				padding: 10px;
+				position: absolute;
+			}
+			div.lastbox div.about
+			{
+				color: blue;
+				width: 200px;
+				height: 200px;
+				top: 10%;
+				left: 20%;
+				padding: 10px;
+				position: absolute;	
+			}
+			div.lastbox div.cg
+			{
+				color: blue;
+				width: 200px;
+				height: 200px;
+				top: 10%;
+				left: 40%;
+				padding: 10px;
+				position: absolute;	
+			}
+			div.lastbox div.ins
+			{
+				color: blue;
+				width: 200px;
+				height: 200px;
+				top: 10%;
+				left: 60%;
+				padding: 10px;
+				position: absolute;	
+			}
+			div.lastbox div.logo
+			{
+				color: blue;
+				width: 200px;
+				height: 200px;
+				top: 3%;
+				left: 80%;
+				padding: 10px;
+				position: absolute;	
+			}
+			.lastbox .logo .ul
+			{
+				display: flex;
+				position: absolute;
+				background: #000;
+			}
+			.lastbox .logo .ul .li
+			{
+				display: flex;
+				list-style: none;
+				position: absolute;
+				background: #000;
+				width: 200px;
+				height: 300px;
+			}
+			h1.re
+			{
+				position: absolute;
+				font-family:Gabriola ;
+				font-size: 100px;
+				text-align: center;
+				top: 65%;
+				align-items: center;
+				justify-content: center;
+				left: 24%;
+			}
+			.right
+			{
+				width: 100%;
+				height: 60px;
+				position: absolute;
+				color:#000;
+				background: LightCoral;	
+				text-align: center;
+				top: 688%;	
+				font-family: Gabriola;
+				font-size: 40px;
+			}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="logo">
+			<a href="">GOOD-HOMES</a>
+			</div>
+			<div class="menu">
+			<ul>
+				<li><a href="">HOME</a></li>
+				<li><a href="">ABOUT US</a>
+				<li><a href="">HELP</a></li>
+				<li><a href="">CONTACT US</a></li>
+				<li><a href="loginpage.html">LOGIN</a></li>
+				<li><a href="loginpage.html">NEW-USER</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+
+<div class="bar">
+
+	<form action="">
+
+		<div>
+				<input type="search" placeholder="search your product">
+		<p><i class="fa fa-search"></i></p>
+		</div>
+	</form>
+	</div>
+
+
+</div>
+
+
+
+
+
+
+
+	<div class="category">
+		<ul>
+			<li><a href="">BEDROOM</a></li>
+			<li><a href="F:\furniture project\study\study.html">STUDY</a>
+			<li><a href="">KITCHEN</a></li>
+			<li><a href="F:\furniture project\sofa\sofalist.html">SOFA</a></li>
+			<li><a href="">MATRESS</a></li>
+			<li><a href="">DINING</a></li>
+			<li><a href="">LIGHTNING</a></li>
+		</ul>
+	</div>
+
+
+	<div class="imgblur">
+		<div class="imgtitle">
+			<h1 data-text="CREATE YOUR OWN SPACE">CREATE YOUR OWN SPACE</h1>
+		</div>
+		<div class="overlay"></div>
+	</div>
+
+	<div class="imghover">
+		<div class="why">
+			<h1>Why To Choose Us...</h1>
+		</div>
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<img src="moneyback12.jpg" width="200px" height="190px">
+				</div>
+			</div>
+			<div class="face face2">
+				<div class="centent">
+					<p>
+						GOOD-HOMES provides you 100% Money Back guarantee without any questions. 
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<img src="quality6.png" width="200px" height="200px">
+				</div>
+			</div>
+			<div class="face face2">
+				<div class="centent">
+					<p>
+						"Focus On Quality" is the main Motive of GOOD-HOMES. So be Sure.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<img src="expert3.png" width="200px" height="200px">
+				</div>
+			</div>
+			<div class="face face2">
+				<div class="centent">
+					<p>
+						Our Top EXPERTS Advice you best to create your Dream Home. 
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<img src="ship1.png" width="250px" height="250px">
+				</div>
+			</div>
+			<div class="face face2">
+				<div class="centent">
+					<p>
+						Around the time that the Buddha was preaching and perhaps a little earlier, other thinkers also tried to find answers to difficult questions. 
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<img src="main4.png" width="200px" height="200px">
+				</div>
+			</div>
+			<div class="face face2">
+				<div class="centent">
+					<p>
+						Around the time that the Buddha was preaching and perhaps a little earlier, other thinkers also tried to find answers to difficult questions. 
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<h1 class="re">..Few Choices For You..</h1>
+		<div class="my">
+		<div class="recom">
+			<div class="box1">
+				<div class="img1">
+					<img src="f15.jpg" width="800px" height="400px">
+				</div>
+				<div class="info">
+					<h3>A touch of velvet</h3>
+					These aren't your parents' velvets anymore! Adding a piece of velvet furniture into your home is a way of giving yourself a daily fulfillment.
+				</div>
+			</div>
+		</div>
+		<div class="recom1">
+			<div class="box1">
+				<div class="img1">
+					<img src="f13.jpg" width="800px" height="400px">
+				</div>
+				<div class="info">
+					<h3>Deck out with decorative pillows</h3>
+					When the weather outside is frightful, there’s nothing better than getting cozy with a plethora of pillows and throw blankets on your sofa. Bonus points for these beauties that also gussy up the place for the holidays!
+				</div>
+			</div>
+		</div>
+		<div class="recom2">
+			<div class="box1">
+				<div class="img1">
+					<img src="f14.jpg" width="800px" height="400px">
+				</div>
+				<div class="info">
+					<h3>Cool new gray. Equally cool price.</h3>
+					My Spencer Collection features a classic design with a modern twist. And in your choice of finishes, you're sure to find the perfect fit for your bedroom.
+				</div>
+			</div>
+		</div>
+			<div class="recom3">
+			<div class="box1">
+				<div class="img1">
+					<img src="f19.jpg" width="800px" height="400px">
+				</div>
+				<div class="info">
+					<h3>Toasty warm living room</h3>
+					No need to go out in the cold when you can stay in and cozy up on my Walker power reclining sectional. The warm tones and refined textures bring the look together in such an inviting way!			
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+		<div class="lastbox">
+		<div class="cc">
+			<h3>Customer Care</h3>
+				FAQs<br>
+				Contact Us<br>
+				Provide Feedback<br>
+				Delivery Information<br>
+				Returns & Exchanges<br>
+				Financing Options<br>
+				Gift Cards<br>
+				Goodhomes Goof Proof Plan<br>
+				Privacy Policy<br>
+				Terms of Use<br>
+				Sitemap
+		</div>
+		<div class="about">
+			<h3>About Good-Homes</h3>
+				About<br>
+				Store Locations<br>
+				Goodhomes Discount Furniture Reviews<br>
+				Careers<br>
+				Goodhomes For Business<br>
+				Social Responsibility<br>
+				Goodhomes Sports Radio<br>
+				Heart of Bob's<br>
+				Newsroom
+		</div>
+		<div class="cg">
+			<h3>Community Giving</h3>
+				Goodhomes Charitable Foundation<br>
+				Good-homes Outreach<br>
+				Community Giving<br>
+		</div>
+		<div class="ins">
+			<h3>Inspiration</h3>
+				Shop the Look<br>
+				Blog<br>
+				3D Room Designer<br>
+				View In Your Room<br>
+		</div>
+		<div class="logo">
+			<h3>Follw us</h3>
+			<ul>
+				<li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+				<li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+				<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+				<li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
+				<li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+			</ul>
+		</div>
+	</div>
+	<div class="right">
+		© COPYRIGHT  GOOD-HOMES. DESIGN  BY  VINTI DUGAR
+	</div>
+
+
+	<a class="top" href="#">á</a>
+
+
+</body>
+</html>
